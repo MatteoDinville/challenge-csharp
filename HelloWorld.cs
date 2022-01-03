@@ -1,10 +1,10 @@
-﻿using System;
-namespace challenge_csharp
+﻿namespace CSharpDiscovery.Quest01
 {
-    public class HelloWorld
+    public class HelloWorld_Exercice
     {
-        public HelloWorld()
+        public static string HelloWorld()
         {
+            return "Hello World!";
         }
     }
 }
