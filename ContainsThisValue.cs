@@ -8,10 +8,10 @@ namespace CSharpDiscovery.Quest02
         {
             if (Array.IndexOf(tab, value) == -1)   
             {
-                return true;
+                return false;
             }else 
             {
-                return false; 
+                return true; 
             }
             if (tab == null)
             {
