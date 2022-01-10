@@ -4,6 +4,10 @@
     {
         public static int GetStringSize(string str)
         {
+            if (str == null)
+            {
+                return 0;
+            }
             return str.Length;
         }
     }
