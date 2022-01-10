@@ -9,9 +9,13 @@ namespace CSharpDiscovery.Quest02
             if (Array.IndexOf(tab, value) == -1)   
             {
                 return true;
-            }else
+            }else 
             {
                 return false; 
+            }
+            if (Array.IndexOf(tab, value) == null)
+            {
+                return false;
             }
         }
     }
