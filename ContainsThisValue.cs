@@ -13,7 +13,7 @@ namespace CSharpDiscovery.Quest02
             {
                 return false; 
             }
-            if (Array.IndexOf(tab, value) == null)
+            if (tab == null)
             {
                 return false;
             }
