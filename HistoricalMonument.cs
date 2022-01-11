@@ -8,7 +8,7 @@ namespace CSharpDiscovery.Quest03
 
         public HistoricalMonument() { }
 
-        public HistoricalMonument(double Lat, double Long, string Name, int Build) : base(Lat, Long, Name)
+        public HistoricalMonument(string Name, double Lat, double Long,  int Build) : base(Name, Lat, Long)
         {
             this.BuildYear = Build;
         }
