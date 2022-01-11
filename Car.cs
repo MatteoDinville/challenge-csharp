@@ -11,7 +11,7 @@ namespace CSharpDiscovery.Quest04
             Brand = "Unknown";
         }
 
-        public Car(string Color, string Brand, string Model, int CurrentSpeed = 0) : base(Brand, Color, CurrentSpeed)
+        public Car(string Color, string Brand, string Model, int CurrentSpeed = 0) : base(Color, Brand, CurrentSpeed)
         {
             this.Model = Model;
         }
