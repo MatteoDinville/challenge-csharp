@@ -22,5 +22,13 @@ namespace CSharpDiscovery.Quest03
             this.Latitude = Latitude;
             this.Longitude = Longitude;
         }
+        public string GetGoogleMapsUrl()
+        {
+            string result = PointOfInterest.GoogleMapsUrlTemplate;
+            result = result.Replace("{0}", this.Name.Replace(' ', '+'));
+            result = result.Replace("{1}", this.Latitude.ToString());
+            result = result.Replace("{2}", this.Longitude.ToString());
+            return result;
+        }
     }
 }
