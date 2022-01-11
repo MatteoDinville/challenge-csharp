@@ -13,7 +13,10 @@ namespace CSharpDiscovery.Quest04
 
         public Car(string Color, string Brand, string Model, int CurrentSpeed = 0) : base(Color, Brand, CurrentSpeed)
         {
+            this.Color = Color;
+            this.Brand = Brand;
             this.Model = Model;
+            this.CurrentSpeed = CurrentSpeed;
         }
         public override string ToString()
         {
