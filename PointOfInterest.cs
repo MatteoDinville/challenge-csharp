@@ -30,5 +30,10 @@ namespace CSharpDiscovery.Quest03
             result = result.Replace("{2}", this.Longitude.ToString());
             return result;
         }
+        public override string ToString()
+        {
+            string resultTemplate = "{0} (Lat={1}, Long={2})";
+                return string.Format(resultTemplate, this.Name, this.Latitude, this.Longitude);
+        }
     }
 }
