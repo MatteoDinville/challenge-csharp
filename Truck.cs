@@ -20,7 +20,7 @@
             return string.Format(Template, this.Color, this.Brand, this.Tonnage);
         }
 
-        public override void Accelerate(int Speed)
+        public void Accelerate(int Speed)
         {
             if (CurrentSpeed + Speed <= 100)
             {
@@ -32,7 +32,7 @@
             }
         }
 
-        public override void Brake(int BrakePower)
+        public void Brake(int BrakePower)
         {
             if (CurrentSpeed - BrakePower >= 0)
             {
