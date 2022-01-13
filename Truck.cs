@@ -16,7 +16,7 @@
 
         public override string ToString()
         {
-            string Template = "{0} {1} {2} + T Truck";
+            string Template = "{0} {1} {2}T Truck";
             return string.Format(Template, this.Color, this.Brand, this.Tonnage);
         }
 
