@@ -24,7 +24,7 @@ namespace CSharpDiscovery.Quest04
             string Template = "{0} {1} {2}";
             return string.Format(Template, this.Color, this.Brand, this.Model);
         }
-        public override void Accelerate(int Speed)
+        public void Accelerate(int Speed)
         {
             if (CurrentSpeed + Speed <= 180)
             {
@@ -35,7 +35,7 @@ namespace CSharpDiscovery.Quest04
                 CurrentSpeed = 180;
             }
         }
-        public override void Brake(int BrakePower)
+        public   void Brake(int BrakePower)
         {
             if (CurrentSpeed - BrakePower >= 0)
             {
